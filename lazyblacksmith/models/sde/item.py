@@ -81,8 +81,7 @@ class Item(db.Model):
     )
 
     def icon_32(self):
-        static_url = "ccp/Types/%d_32.png" % self.id
-        return url_for('static', filename=static_url)
+        return "https://image.eveonline.com/Type/%d_32.png" % self.id
 
     def icon_64(self):
         static_url = "ccp/Types/%d_64.png" % self.id
